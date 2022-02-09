@@ -7,7 +7,8 @@ module.exports = async () => {
       helloWorld: require('./widgets/helloWorld'),
     },
     listeners: {
-      InitData: require('./listeners/initData'),
+      InitData:
+        require('./listeners/initData'),
     },
     rootWidget: 'helloWorld'
   }

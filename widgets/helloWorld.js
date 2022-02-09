@@ -2,7 +2,6 @@
 
 module.exports = (data, props) => {
   return {
-    type: "flex",
     children: [
       {
         type: "text",
