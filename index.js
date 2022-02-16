@@ -10,8 +10,7 @@ module.exports = async () => {
     },
     listeners: {
       InitData:
-        require('./listeners/initData'),
-      changeValue: require('./listeners/changeValue'),
+        require('./listeners/initData')
     },
     rootWidget: 'helloWorld'
   }
