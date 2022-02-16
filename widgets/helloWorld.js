@@ -2,8 +2,19 @@
 
 module.exports = (data, props) => {
   return {
-    type: "widget",
-    name: data.path
+    type: "flex",
+    children: [
+      {
+        type: "text",
+        value: `Hello ${data.value}!`
+      },
+      {
+        type: "textfield",
+        value: data.value,
+        onChanged: {
+          action: "changeValue"
+        }
+      }
+    ]
   }
 }
-
