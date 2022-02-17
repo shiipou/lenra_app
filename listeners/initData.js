@@ -2,7 +2,7 @@
 
 module.exports = module.exports = (data, props, event) => {
   return {
-    value: "world",
+    value: "test",
     path: "hello"
   }
 }
