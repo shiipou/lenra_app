@@ -4,9 +4,9 @@
 module.exports = async () => {
   return {
     widgets: {
-      helloWorld: require('./widgets/helloWorld'),
-      testWidget: require('./widgets/testWidget'),
-      hello: require('./widgets/hello')
+      // helloWorld: require('./widgets/helloWorld'),
+      // testWidget: require('./widgets/testWidget'),
+      // hello: require('./widgets/hello')
     },
     listeners: {
       InitData:
