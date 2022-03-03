@@ -2,8 +2,15 @@
 
 module.exports = (data, props) => {
   return {
-    type: "widget",
-    name: data.path,
-    props: {}
+    type: "flexible",
+    fit: "tight",
+    flex: 1,
+    child:
+    {
+      type: "widget",
+      name: "hello"
+    }
+
   }
 }
+
