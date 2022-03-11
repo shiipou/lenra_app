@@ -1,7 +1,7 @@
 'use strict'
 // Widgets
 
-module.exports = async () => {
+module.exports = () => {
   return {
     widgets: {
       app: require('./widgets/app'),
