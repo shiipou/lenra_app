@@ -4,12 +4,19 @@
 module.exports = async () => {
   return {
     widgets: {
-      helloWorld: require('./widgets/helloWorld'),
+      main: require('./widgets/main'),
+      userData: require('./widgets/userData'),
+      counters: require('./widgets/counters'),
+      counter: require('./widgets/counter')
     },
     listeners: {
-      InitData: require('./listeners/initData'),
-      changeValue: require('./listeners/changeValue')
+      increment: require('./listeners/increment'),
+      decrement: require('./listeners/decrement'),
+      newCounter: require("./listeners/newCounter"),
+      deleteCounter: require("./listeners/deleteCounter"),
+      onEnvStart: require('./listeners/onEnvStart'),
+      onUserFirstJoin: require('./listeners/onUserFirstJoin')
     },
-    rootWidget: 'helloWorld'
+    rootWidget: 'main'
   }
 }
