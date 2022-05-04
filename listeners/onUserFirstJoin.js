@@ -4,9 +4,9 @@ const counterService = require("../services/counterService")
 
 
 module.exports = (props, event, api) => {
-    print("OnUSerFirstJoin")
+    console.log("OnUSerFirstJoin")
     return counterService.new(api).then(function (response) {
-        print("response" + response)
+        console.log("response" + response)
         response.data
     });
 }

@@ -4,9 +4,9 @@ const counterService = require("../services/counterService");
 
 
 module.exports = (props, event, api) => {
-    print("OnEnvStart")
+    console.log("OnEnvStart")
     return counterService.createDatastore(api).then(function (response) {
-        print("response" + response)
+        console.log("response" + response)
         response.data
     }).catch((e => { }));
 }
