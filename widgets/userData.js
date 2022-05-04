@@ -4,7 +4,7 @@ module.exports = (data, props) => {
     var userData = data[0]
     return {
         type: "text",
-        value: `Email : ${userData._user.email}`
+        value: `Email : test@test.te` //${userData._user.email}`
     }
 }
 
