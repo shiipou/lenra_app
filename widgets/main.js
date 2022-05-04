@@ -5,10 +5,10 @@ module.exports = (data, props) => {
     type: "flex",
     direction: "vertical",
     children: [
-      {
-        type: "image",
-        src: "logo-vertical.png"
-      },
+      // {
+      //   type: "image",
+      //   src: "logo-vertical.png"
+      // },
       {
         type: "text",
         value: "This is the Hello World base app using the data system."
@@ -18,7 +18,7 @@ module.exports = (data, props) => {
         name: "userData",
         query: {
           "$find": {
-            "_datastore": "UserData",
+            "_datastore": "_users",
             "_id": "@me"
           }
         }
